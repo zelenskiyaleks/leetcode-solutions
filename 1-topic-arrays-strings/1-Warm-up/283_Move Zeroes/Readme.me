@@ -1,0 +1,30 @@
+# 283. Move Zeroes
+
+**Difficulty:** Easy  
+**Topic:** Arrays
+
+## Problem
+
+Given an integer array `nums`, move all `0`s to the end of the array
+while maintaining the relative order of the non-zero elements.
+
+You must do this in-place without making a copy of the array.
+
+## Approach
+
+We use a two-pointer technique.
+
+Pointer `k` keeps track of the position where the next non-zero
+element should be placed.
+
+We iterate through the array:
+
+- If the current element is not zero, we move it to position `k`
+- Then we increase the value of `k`
+
+After processing all elements, the remaining positions are filled with zeros.
+
+## Complexity
+
+**Time complexity:** O(n)  
+**Space complexity:** O(1)
